@@ -1,5 +1,5 @@
 [project]
-name = "zer0gear Comfy Utilities"
+name = "zer0gear-comfy-utilities"
 description = "Nodes: ListConcat with custom separator"
 version = "1.0.0" # Custom Node version. Must be semantically versioned.
 license = { file = "LICENSE.txt" }

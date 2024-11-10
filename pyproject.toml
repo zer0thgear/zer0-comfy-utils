@@ -1,7 +1,7 @@
 [project]
 name = "zer0gear-comfy-utilities"
-description = "Nodes: ListConcat with custom separator"
-version = "1.0.0" # Custom Node version. Must be semantically versioned.
+description = "Nodes: ListConcat with custom separator, Multiline String"
+version = "1.1.0" # Custom Node version. Must be semantically versioned.
 license = { file = "LICENSE.txt" }
 dependencies  = [] # Filled in from requirements.txt
 
@@ -9,6 +9,6 @@ dependencies  = [] # Filled in from requirements.txt
 Repository = "https://github.com/zer0thgear/zer0-comfy-utils"
 
 [tool.comfy]
-PublisherId = "zer0gear" # TODO (fill in Publisher ID from Comfy Registry Website).
+PublisherId = "zer0gear"
 DisplayName = "zer0ComfyUtilities" # Display name for the Custom Node. Can be changed later.
 Icon = "" # SVG, PNG, JPG or GIF (MAX. 800x400px)

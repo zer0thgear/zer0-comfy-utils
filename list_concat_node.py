@@ -3,9 +3,9 @@ class ListConcatNode:
     def INPUT_TYPES(self):
         return {
             "required": {
-                "input_list": ("*", {}),
-                "combine_last_three_items": (["FALSE", "TRUE"], {}),
-                "separator": ("STRING", {"default": " BREAK "}),
+                "input_list": ("*", {"tooltip": "The list of strings to concatenate"}),
+                "combine_last_three_items": (["FALSE", "TRUE"], {"tooltip": "If TRUE, the last three items in the list will be combined before concatenating, useful for when using LORAs"}),
+                "separator": ("STRING", {"default": " BREAK ", "tooltip": "The separator to use when concatenating the list"}),
             }
         }
     @classmethod

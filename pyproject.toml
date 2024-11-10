@@ -11,4 +11,4 @@ Repository = "https://github.com/zer0thgear/zer0-comfy-utils"
 [tool.comfy]
 PublisherId = "zer0gear" # TODO (fill in Publisher ID from Comfy Registry Website).
 DisplayName = "zer0ComfyUtilities" # Display name for the Custom Node. Can be changed later.
-Icon = "https://example.com/icon.png" # SVG, PNG, JPG or GIF (MAX. 800x400px)
+Icon = "" # SVG, PNG, JPG or GIF (MAX. 800x400px)

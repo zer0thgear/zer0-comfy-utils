@@ -17,6 +17,7 @@ class ListConcatNode:
     INPUT_IS_LIST = True
     FUNCTION = "concat_list_with_separator"
     CATEGORY = "text utility"
+    DESCRIPTION = "Combines a list of strings into a single string, separated by a provided separator."
     def concat_list_with_separator(self, input_list, combine_last_x_items, separator):
         # If combine_last_x_items is greater than 1, combine the last X items in the list
         if combine_last_x_items[0] > 1:

@@ -1,7 +1,7 @@
 [project]
 name = "zer0gear-comfy-utilities"
-description = "Nodes: ListConcat with custom separator, Multiline String"
-version = "2.0.0" # Custom Node version. Must be semantically versioned.
+description = "Nodes: List Combine with custom separator, Multiline String"
+version = "3.0.0" # Custom Node version. Must be semantically versioned.
 license = { file = "LICENSE.txt" }
 dependencies  = [] # Filled in from requirements.txt
 

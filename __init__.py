@@ -1,8 +1,8 @@
 from .multiline_string import MultilineStringNode
-from .list_concat_node import ListConcatNode
+from .list_combine_node import ListCombineNode
 
 NODE_CLASS_MAPPINGS = {
-    "List Concat Node (zer0)": ListConcatNode,
+    "List Combine Node (zer0)": ListCombineNode,
     "Multiline String Node (zer0)": MultilineStringNode,
 }
 

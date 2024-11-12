@@ -9,3 +9,9 @@ Includes a Combine Last X Items variable to pre-combine the last X items in the 
 
 ## Multiline String Node
 Similar to a Note node, allows you to enter a multiline string but has an output widget to allow its contents to be passed to another node.
+
+## Tavern Card Info Node
+Reads basic fields from an uploaded PNG in v2 spec character card format.
+
+## Tavern Card Creation Node
+Allows for the creation of a basic v2 spec character card using an input image as a base.

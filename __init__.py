@@ -1,3 +1,10 @@
+"""
+@author: zer0gear
+@title: zer0gear's Comfy Utilities
+@nickname: zer0gear Comfy Utils
+@description: Dubiously useful nodes that I've made for my own use.
+"""
+
 from .multiline_string import MultilineStringNode
 from .list_combine_node import ListCombineNode
 

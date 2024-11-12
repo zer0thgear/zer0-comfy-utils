@@ -20,7 +20,7 @@ class WriteTavernCardNode:
     def INPUT_TYPES(self):
         return {
             "required": {
-                "image": ("IMAGE", {}),
+                "image": ("IMAGE", {"tooltip": "The image to be displayed on the tavern card."}),
                 "filename": ("STRING", {"default": "tavern_card", "tooltip": "The filename to save the tavern card as."}),
                 "card_name": ("STRING", {"default": "",}),
                 "card_description": ("STRING", {"default": "", "multiline": True}),

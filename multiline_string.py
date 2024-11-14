@@ -14,4 +14,4 @@ class MultilineStringNode:
     CATEGORY = "text utility"
     DESCRIPTION = "A node that allows for the entry of a multiline string."
     def return_string(self, input_string):
-        return (input_string[0],)
+        return (input_string,)

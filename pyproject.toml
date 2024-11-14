@@ -1,7 +1,7 @@
 [project]
 name = "zer0gear-comfy-utilities"
 description = "Nodes: List Combine with custom separator, Multiline String, Tavern Card Info, Tavern Card Creation"
-version = "3.1.0" # Custom Node version. Must be semantically versioned.
+version = "3.2.0" # Custom Node version. Must be semantically versioned.
 license = { file = "LICENSE.txt" }
 dependencies  = ["tiktoken"] # Filled in from requirements.txt
 

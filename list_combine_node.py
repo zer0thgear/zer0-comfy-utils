@@ -13,8 +13,8 @@ class ListCombineNode:
         return True
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("Combined String",)
+    INPUT_IS_LIST = (True, False, False)
     OUTPUT_TOOLTIPS = ("The combined list as a single string",)
-    INPUT_IS_LIST = True
     FUNCTION = "combine_list_with_separator"
     CATEGORY = "text utility"
     DESCRIPTION = "Combines a list of strings into a single string, separated by a provided separator."

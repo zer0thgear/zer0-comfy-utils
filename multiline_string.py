@@ -9,7 +9,6 @@ class MultilineStringNode:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("Output",)
     OUTPUT_TOOLTIPS = ("The multiline string",)
-    INPUT_IS_LIST = True
     FUNCTION = "return_string"
     CATEGORY = "text utility"
     DESCRIPTION = "A node that allows for the entry of a multiline string."

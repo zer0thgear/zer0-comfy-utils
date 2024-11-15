@@ -37,27 +37,20 @@ class PromptOptimizationNode:
         optimized_prompt = ",".join(split_prompt)
         optimized_token_count = len(tokenizer.encode(optimized_prompt))
         final_chunked_prompt = ""
-        print(token_count)
-        print(separator)
-        print(split_prompt)
         if token_count is not None:
             tag_token_counts = list(map(lambda s: len(tokenizer.encode(s)), split_prompt))
             current_token_count = 0
             chunked_prompts = []
             current_chunk = []
             for i in range(len(split_prompt)):
-                print(current_token_count, tag_token_counts[i])
                 if current_token_count + tag_token_counts[i] < token_count:
-                    print("Adding", split_prompt[i])
                     current_chunk.append(split_prompt[i])
                     current_token_count += tag_token_counts[i]
                 else:
-                    print("Chunking", current_chunk)
                     chunked_prompts.append(",".join(current_chunk))
                     current_chunk = [split_prompt[i]]
                     current_token_count = tag_token_counts[i]
                 if i == len(split_prompt) - 1:
                     chunked_prompts.append(",".join(current_chunk))
-            print(chunked_prompts)
             final_chunked_prompt = f",{separator}".join(chunked_prompts)
         return (optimized_prompt, final_chunked_prompt, pre_optimized_token_count, optimized_token_count,)

@@ -28,6 +28,7 @@ class ReadTavernCardNode:
     DESCRIPTION = "Returns tavern card metadata."
     def return_card_info(self, image):
         image_path = folder_paths.get_annotated_filepath(image[0])
+        print(image_path)
         img = node_helpers.pillow(Image.open, image_path)
         card_info = json.loads(base64.b64decode(img.text["chara"]))["data"]
         parsed_card = TavernCard(card_info)

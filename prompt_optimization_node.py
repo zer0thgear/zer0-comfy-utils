@@ -38,7 +38,7 @@ class PromptOptimizationNode:
         optimized_token_count = len(tokenizer.encode(optimized_prompt))
         final_chunked_prompt = ""
         if token_count is not None:
-            tag_token_counts = list(map(lambda s: len(tokenizer.encode(s)), split_prompt))
+            tag_token_counts = list(map(lambda s: len(tokenizer.encode(f"{s},")), split_prompt))
             current_token_count = 0
             chunked_prompts = []
             current_chunk = []
